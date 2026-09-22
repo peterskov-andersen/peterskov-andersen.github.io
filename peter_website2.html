@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peter Moltke Skov-Andersen — Neuroscientist</title>
+<meta name="description" content="Peter Moltke Skov-Andersen, neuroscientist studying the neural correlates and pharmacology of altered states of consciousness: psychedelics and meditation.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='none' stroke='%232E7D6F' stroke-width='6'/><circle cx='50' cy='50' r='26' fill='none' stroke='%232E7D6F' stroke-width='6'/><circle cx='50' cy='50' r='9' fill='%232E7D6F'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F5F7F6;
+  --ink: #16302C;
+  --muted: #5B6B67;
+  --accent: #2E7D6F;
+  --mint: #D5EBE4;
+  --rule: #D9E2DF;
+  --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --sans: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0F1C1A;
+    --ink: #E3ECE9;
+    --muted: #9AAEA9;
+    --accent: #7CC7B6;
+    --mint: #1D3531;
+    --rule: #2A3F3B;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 19rem minmax(0, 1fr);
+  gap: 4.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+/* Sidebar */
+.side { position: sticky; top: 3rem; align-self: start; }
+.portrait {
+  position: relative;
+  width: 11rem;
+  height: 11rem;
+  margin: 2.25rem 0 3.25rem 2.25rem;
+}
+.portrait svg { position: absolute; inset: -2.25rem; width: calc(100% + 4.5rem); height: calc(100% + 4.5rem); color: var(--accent); opacity: .55; }
+.portrait img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  border-radius: 50%;
+  display: block;
+}
+h1 {
+  font-size: 2.1rem;
+  line-height: 1.12;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0 0 .75rem;
+}
+.role { font-style: italic; color: var(--muted); margin: 0 0 1.5rem; line-height: 1.45; }
+.contact, .nav { font-family: var(--sans); font-size: .9rem; list-style: none; padding: 0; margin: 0; }
+.contact li { margin-bottom: .35rem; }
+.contact .place { color: var(--muted); }
+.nav { margin-top: 2.25rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+.nav li { margin-bottom: .3rem; }
+.nav a { color: var(--ink); text-decoration: none; }
+.nav a:hover { color: var(--accent); }
+
+/* Main */
+main section { padding-top: 1rem; margin-bottom: 3.5rem; scroll-margin-top: 2rem; }
+h2 {
+  font-size: 1.55rem;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.35; margin: 0 0 .25rem; }
+p { margin: 0 0 1rem; max-width: 40rem; }
+.lede { font-size: 1.35rem; line-height: 1.5; max-width: 38rem; }
+.lede + p { max-width: 38rem; }
+
+.entry {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.when { font-family: var(--sans); font-size: .85rem; color: var(--muted); padding-top: .2rem; line-height: 1.45; }
+.where { font-style: italic; color: var(--muted); margin: 0 0 .5rem; }
+.entry ul, .plain { margin: .25rem 0 0; padding-left: 1.1rem; max-width: 40rem; }
+.entry li, .plain li { margin-bottom: .25rem; }
+.note { font-family: var(--sans); font-size: .85rem; color: var(--muted); }
+
+.pubs { list-style: none; padding: 0; margin: 0 0 2rem; max-width: 42rem; }
+.pubs li { margin-bottom: 1.1rem; padding-left: 1rem; border-left: 2px solid var(--mint); }
+.pubs .meta { display: block; font-family: var(--sans); font-size: .85rem; color: var(--muted); }
+h3.sub { font-family: var(--sans); font-size: .95rem; font-weight: 600; color: var(--muted); margin: 0 0 1rem; }
+
+.twocol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2.5rem; }
+.twocol h3 { margin-bottom: .4rem; }
+.twocol ul { margin: 0; padding-left: 1.1rem; }
+
+.tags { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 0; max-width: 42rem; }
+.tags li { font-family: var(--sans); font-size: .85rem; background: var(--mint); padding: .25rem .7rem; border-radius: 999px; }
+
+footer { font-family: var(--sans); font-size: .8rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.25rem 4rem; }
+  .side { position: static; }
+  .portrait { width: 8.5rem; height: 8.5rem; margin: 2.25rem 0 2.75rem 2.25rem; }
+  .nav { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; }
+  .entry { grid-template-columns: 1fr; gap: .2rem; }
+  .twocol { grid-template-columns: 1fr; }
+  .lede { font-size: 1.2rem; }
+}
+@media print {
+  .nav, .portrait svg { display: none; }
+  .layout { display: block; padding: 0; }
+  .side { position: static; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="side">
+    <div class="portrait">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="97" fill="none" stroke="currentColor" stroke-width=".6"/>
+        <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width=".8"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="1.1"/>
+      </svg>
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAFrAQcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0Cz/1ZHvU7jioLP7jfWp36VkUVJKz75f9Hb6VoydTVG9H+jv9KmWwDdL/ANbH9K6Cuf0z78RroaFsDCkIp1JimA3FIBzTsUd6ABhTKlao6AEpaKKAClpKWgAqG7/49ZPpU1Q3f/HrJ9KQzFpaKSqQiSH/AFq/jVp/9W1VYf8AWj8atOcRmmIz3+90+tNyMHtz6U5+GyMn8KQfUY9aQw470BR0I46daXHqPpR2K4JGM5/xoAMevGf1pQCeMLnnAznNGO46+9HGBx2x+FACEEN2pp6ZI5pxww+UDHU4NBUHPzdD34zQMYQvoeOOO350vzbRlce/WlI+7nbzwB9OaVgCu08j0xxQIaFJxtPPsen4f560U4hncYxjuvf8KKANez+631qdulQWf3W+tWG6UAVJOtUrwZt3+lXpOtUrsZhf6UnsCItM+9FXQiuf04YaIV0NC2BhRS0UwExSY5p2KTHNIBWHFRkVKwphoAbSU7FJQAUUUUDFqC7/AOPWT6VPUN3/AMesn0pAYtFLSVQh8P8ArRVmT/Vmq0P+tWrMnMTZpiM9gQcnr7UZ+bIHHtSNwxyeDSYA4HPapGOLcjPfp607kfex6DnGKaBzgjGe3Ax7UuQpz0JpgKSc4Cj+gFAB6d/XFKS2PlIGPUZoIPpx9aAEySoxgntzikwDkcBiOv8AKncMDjp1460qru4Ix36An9KAGHdtxy5B5x1P/wBeg45JPA6+1OPPPJzzzwaRDjDB/rt7j2oAaQSOMr9Rg/rRTt24ZwRnsaKBmtZ/x/WrDdKgtOr/AFqw3SgRVkqndD9y30q7JVO5H7lvpSewEOn/AH4vrXQiudsODGfeuiHShbAFLRRTAKO9LRQAMKZUh6Uw0gG0lOpKAG0tFFAwqG6/49ZPpU1RXX/HrJ9KBGLSUtFMB0X+tFWX/wBWarxf60VYf/VGmIz2Jzjj8KAR2yM9aGIORyKRe/v+tIYoAwMDg+lKG45IJxzgUg6YOenalGc8A4Bzg0AKMgdf0peCCDgg0g+bkZx2J6U/7zcEDJ70DGlSQM4B9v6UuF6KAOMY6/gKUqOoVR6c9aOcH26AcUAIB22cdCD/AJ5oYDcWbnGf4sUj5Uhipx1IJAI/XFOxgHB6DABoEMYkv8wJz1YkfyzxRTjw3fHp6/hRQBq2n3n+tWW6VWtfvv8AWrLdKAKslVLn/VN9KuSVUuP9U30oYFew+9H9a6EdBXPWHWP610Q6UkAUUtFMApRRRQArUw1I3SmGkA3FJTsUhoAbRVa91K00+ISXUwiUnaCQTk1QPinRdzL9uTKnBHP6ev4UroaTNO4uYbSFpriVY416sxwBWfNrFlNaymKUSL5e/KDJxnAOOvPPbtWBrniTRLmPEhkmjRT8pV1DHt2x+PYdM15y0ymQiNgEclgqgjHPbOecfn+HMuXYpQvueqJd2zpvSeNkHVgwIFShlboQfoc15crmNgElYMRnkYB//V1q7b6rPbHcksgDAHcrcfiOho9oP2Z6PF/rRVh/9W1chpfiqPzAt4RszjzVB4+o/LkflXWCWOe38yJ1ZGGQynINaKSexDi1uU2AJx0FIM/d7d8ihsEHrnsaTO7+uTQIXpnjj24z9KcOgJPTnjJpPQ5/TpQGIA9f5UAPxhsZ5+lL8w57EfSm84wTg96XHGfxBDcn+VAwKK2SQTz/AHjx6fSnEHjBA56kUck8n8/SlXb/ABHgHr0oEKQSMkApyQcZyOtMGFQBTn/D2oRGVeSNx77entj8zSOCF4bA6k/4+1ADmyFXuf5f5/rRQAAAFH4j/wCtx3ooGalr/rZKtN0qtbf656st0oEVZKqz/wCrb6VbkqpP/q2+lDEitYfeT610Y6Vzlj1T/eroh0FJDFoopaYBRRS0AOPSmGpD0phoENpjMFUluAOaS4njtoJJpThEUsT7CvMvEPjO61Eta2KFIc4JU8scjHbjGKluxUYtljxxd2FzKiRz7p0O1gG+vB9Dn37j1zXGKJVZ3yWDcZcAkfQ9jkUphdwfM27W4znpjHb1p8E8IVYR5kgGVIzwfQ/5/pmsm7m8Y2KN3crgfMGGOqgdMf8A1vQ1nWswYzIDltu4devp1/zzW9JaJO23ZIQecFuF/CqbaM0L+aMhhnGBjPFNMrlZWF+LmDbLkup5bnIPY8UC5cpsZiQBjqB6+n+f6Sf2PcJgKrYPv1pn9mTRKGZWHy4BoCzEhvTDclHbIboa6LR/Elxo8qxbjNZyf8syenfg9j/P9Rytzp8sZRyCy+xqRXLRNExA2jI+UAf55o21Qmu57BBeRXkC3EL7o35H19/Q1JnjJ+76dq808O6/JpcuyRi0LH50zyp9v89vpXo0EyTxrJDIHRhlSDnIrRO5hKNiwG4z/WnYY9BknHYH/P8A9ao1OMH/ACfpT1IONqgZ9B1qiR42YGDx29qVScEZC+1N64wQCDkAmnAHjv8ATmgBykZGAAVPOTQNx5YA4PHf/PH86buyADkEevWnHKkLjbn0/P0oAd0B5yCeOfemglEzuOM9f5UYU8k5IOMenSgLkHjGexyPw9vpQAo2p/ENvuf84opGcIxMZVscYbA/lRQBq23+verR6VVt/wDXvVo9KBFWSqs/3D9KtyVVm+4aGBTseqf71dIOgrm7L7y/71dIOgpLYYtFFFMApRRRQIeegplPNMPSgZxnj+7K2UdrvKxtl3C9Wx2+leRpNcX+oLbAjC9doA2KPQfh0rvfiHdE6m2yNtyII1Iz8x9MfUj64qlovh8afbebMD50vzPuPPsM1jI3poqW+kGZBuHyjouMAVZXRljYHGRj0rX3D7irmpEh3feNZ3OtRSKdvZRoASOnXAqxHp0coYuDk45PerqQqMetXFiXGFIAAyaauJ2Rk/2dAFwFAK8VHJp8TgjAHetSSMZwOnqarvkZ6UXGkmYdxpishUjp1FcrqWlNbkkcDtkcivQGAI/HNY+qR+bEykLjuaEyZRPP/N8tsOcMnylhxke9dl4S16KACykkIiYjYeTg9+fTNche/LIdvQn+EVTgkaFgS4PPXrWqOaSPdlORxg+uTinDO4j88nFc54Q1I6ho4WRsvA2wseuOoP8AT8K6AHudwHbJz/n6VoYbEzYySenY/wCFOIAPPOOMgU0ZKdM5HP8A9elzt2kAbfr046UAOGOuck9aUBeAMYx2HSmYR/7pI555wR/WnA8HoegIzkUAO7deKQp3BBPvSKF3ZIYYHb0/yacQF+VRzx+FAxThTkqSoHGOfpRQWwMhmIxjpmigDVg/4+X+lWj0qpD/AMfLVbbpQSVZKqzfcNWpKrS/cNAFKy6j/erpF+6K5u04Yf739a6Rfuikhi0tJS0wCiilFADv4RTSM089BTTQI5fxBYQy6hbzSIGMS5GfU8D+tZF4SXYAfrXQa2SZHGMbVHPr/nNc/MA/zDGfSsp7HTRKaAAYANTR59KEC9Mc09sIBisTtJY2JI45AqdD2wcdKrx4LAE9fSrJyFxnj0FUiJEMjANjJqq75JFSyuScA5NQnAPXBqWNCMQAeKydTQSRkEHB647+1abk5qheMFjOTx3oQS2OE1SLD7gMY6+1ZLKQ6sQg44ONvrW/fqjqWzxk1lSxIS8hBwvOP1/pWsWc0kdV8PbgJeXMZmXDqNingkj0/M16GDzlSOenpXkHh25e01q0ZMZMgDcdjwf5n6V66M4HJAPH41qtjnkrMkU4U5XI+nSn8bQen1qNOPlwOD8oAqTtz1HfNMkcSd2Rnb/WlDbj93AzgUZ4wecHsaVTyRyGI9M0AKQQcbD2JORilABPJGM4I/8ArUgIJIDcDg85x/nmjGTyvHbP8vegYpAYYdVJzwfSinBsjh9rAccDj160UCNSH/j6b6VaNVYv+Ps/SrR6UCK0lVZfumrUtVpPumgChafe/wCBV0q/dFc3a8Of96ukX7o+lJDHUUlLTAKWkpaAHnoKbTj0ptAHE+MNWa1uWgTglF69zn/P6Vwj+IrmNiAhwvAJFdX45eP+2AJThEi3Mf5AfWuCu5FiiaR3iXBG5EBkK+mSOO4rGV2zqpWUdTo7DW1uT83DDA+taDXYfqf1rz231MFgyElM9du3H4fnXc2VsbjTBMSRkd6hpo6YSTI7rWPs7fKN2BVVfFEzyhfIIU9T6VRvQ8JJIOD+dZ6XDFHlkJWJeu1NxxnH070IUjqRqPnqWDtuI9P8inR37sRvBxnr/jXN2+pxXC7rScSY52Ou1h6nPSr0F55ij5sA9VNJq24RaezOgEmQfX61Uv1Mtq+04IGQakt3LIBg/Wm3JUQvj05pDexw9/KShAyD/wDWrPA3KQeh9vX/ACau3qsZ/LwMljz+OaYlk7SjAwqnnP1rRHPZvYveGtMkufEEezcvk4mY56Dd0r1P7w255x0x1rmPCllFbPczpP5rS7RnHIxmunzgFcZ9s1tHY56ialZjgD1zgtxgn+VSjd2U474piDK/eK9qfwMFieeME1RmPA6hgBzjJzwaXGScLlQeP/1flQAcZIHH8WBg0oHTb9/pk9f5f5xQMXvjqOwNKMhDjHPYdKbxvPTcfbGaUAnHQj+RpAIVXcQwORwc8Hj/APXRT96rjzMAZ655H4f570UDNSP/AI+/wq4elVE/4/Pwq2elBJVk61Wk+6asy1Wk+6aAKFt/rD/v10qfcWuat/8AWN/vV0qfcFJDHUUUUxC0UUUDH9hTacfu02gR594rhiudXeZ4vN2cBSeDjj+YrjZ7cNPLtsDtY/dKjAH8q7XWXEt2x6biW9utUPLG0HAz1ya55NpnpUoJwTZz0WlLK257G3XkY4xz26eldIB5NokYAwfbtTYkDbmJ6cDHqf8A61SXWElYA5C8Y+lD2NIJXK01oJ4mUIhcDgMOD61hG1e2LI1rsToQoBBH06V00WwkHcAR2NSyxqhODkemOlSrg0rnKJZ20+SlkBz/AM8GGfrha0rXSoUGBAE4/hBA/UCtqMRlun4Gkf7zEcemKHcFFLYoLBHGpwMDt8o/wqGTLbuhHpVqYHGMH1zVCYlQcenNSgZz0WnmW8kkbG1OKu2FvDLLIyOGG4qVA7j1rS0uNJXJbkMTkVWg042s7PC2Vd8AevPWquKEUaHh+2NreTjBKMuMZ6c//WrosjAIIAPHFZlht3SPnPJVSBnp1rUjYtwGwT2zxXRTXunFiXeoxygnpjPPU9alGQPUfSmBSxO7p6dv8/4VIi/LjaRnjFWc4q/dPGPcnjFSDPGAOTyTx2poX5R144+lKMEj5TwOx60DBcYGTn6dqFyGOWGMUuTlcAH1zSkZbORk8H/GgYKqliGBxnnB5z+VFID8pBUEHjgelFIRrL/x+CrZ6VUH/H4PpVs0CK0vWqz9Ksy1WfpQBn2/+sf/AHq6WP7g+lc1B/rH/wB6ukj/ANWv0pIGPooopgLRRRQMf/CKbTv4aaaBHmGq3bfbGLYBHH5VlnUhLKY0JIXqaveMbZ01G42feLM2T78j+dc9Z7FDxoAxVS27OM9un45rlluenTn7iOgOr20sKCIBVjYhkJ5B/wDr/wBKguteiVhvxnHG0ZP5CuTlU+efKLIT129DViJC0g84sFx1NFyouxvLrMd6BHBDIkjnA3joPX+tW552t1DCTeF7GsS3lhRsK/zEcnGK0UuwV2t26kipui7lyDUBLHlGJ571YS6DYJrmmYW05mgYbP44/Ue1ajSYKOvIamFzQaUGs+4HyMcip1Yk9Plx2qpcfNIF65zkH1oIuOsVY7wCQG4yvuOorSlA8tY0dlYcFz97H9KwzfHT7N7hRvKkcZ9eKuxzSy4Z+GPJGelVGLZnKqoGjb7U2quAAODnke9aULDoSfQE1jwHB6Z9q1bYAlTnGOOK6UcEm5O7NCPcD0xkdvSnhAVA6A+lMQYH8P0FSBexyPY0yRQOAAcj3pT2PvjGetGO5/LH+NOX045oGIAqrxnsMHvTSeBgkj25/wDr4p3YHHv/APXpdo4DDOeuelIBhXcSpDjPPBIzRSkZH8waKANb/l8WrZqof+PtatmgRWl6mqz9Ksy1WfoaAM+H/Wv/AL1dJH/q1+lc3F/rpPrXSRf6tfpSQMfRRRTGLRRRQA/+EU2nfwimmmI4TxnbtBeRzBSInXHHXPt+JrhJtIRtyr82TnKnH5V7JrmnDUdNkjAPmINyYxnPp/nuBXmkYZbgLMQG54Jwf88isJrU6qU9LGTH4bEUCMLiY7+fmcsfzNXI9Cgki2PeTow9xgfhitK+3pBuQbQRgfT6VkRNOsnJY847VDlZnVTV0Wf+EbAKtHfycdQQv+FVn8PzksF1Oc+gUL/hWzbxuU+dj6Ee9WNoQEt2o5htGBDogtyA0rvkHcznJI/D+lTlg0hC8gHp6VYvboDcAegxWSshUZIqLiLbTt36ZPFQNITIOSR/ePNRGRipUgdvwpVzt4GSOvYcf5NNCbIryPztOdN3UjJ/EVqWx3xox6lRmqjxsbTZj52ZR+oq/AgRQo6CtobHJW3LUPDcCtW1yccn0zms2FcnmtS3OMZP61qjnL6DaOV46k1KOOi470yP3/GpQCRyCPeqAX5ce56mge+QPrQoI+8R7cUpGOS2RjpSAM/Nx8vbr7UnIPQj8qOVzzgdznpS9h69evFAxCp6hSWPXC0U4BmyF64x1xRQFzRbi7Wrh6VTf/j6T61cNIRXl6mqr9KtS9TVZ+hpgZ0f+uk+tdHD/ql+lc5H/r5PrXRw/wCqX6VKBklFFFMApaSloGP/AIabTv4aaaBBXEeJdEa0vP7TtwTEzZlBOdrE/wAj/Ou3qC8t1u7SWBgCHXAyM89uvvUyjdFQlys8vuJw4CAjbjIGagVVZtxPOOQag1iK60y7MdzC6Ag9eRxxkfl1rOW/AkAKlcHkHPH+Sa5nc9GE1Y6SO6WNOR3qKa83rgMAQeawWvgWwSQ2enTFI96oIy/A6n0pFOSLUz+YpBx1xzzUM5jVsHrnj0rP+3EEBELNkZPQZp4Se5wTkdzjjNOxHMWEkGAB1Ge1WIkJcMSNo6DsTTLay2HJ5brirwj249KYrXI5XWNAzsAFO4k9BiryIyOVYYI4o03S21GdpZUBtVHCsM7zn0PUZ49zxzg1tXtgZpI/KQB8HIB4wP8AJ+vJropwfLc460lzWRShHIOK1LcdzxWekbI+xhhgcEVoW5IwMH8BVoxLy4wCWqRQPx+tRqOBz78jp/nFPVTuHTrx70wHemT1FOHA479abjbwG/CnZG7A796Bh6Z796a2eoHPQ07qQP16UmCcHGAD6UgDGf8A9VFKwOcdc98ZooA0ZP8Aj5T61c7VTl4uU+tXO1AFeWqr9DVqWqr0AZ6f8fEn1rooP9Sv0rnF/wCPiSuig/1K/SpQE1effED4hp4cxYWGHvzgse0Y9/c+n+T2+o3Js9NubkDJijZ/yFfM2vLPfatcXMsnmPI24tnuapK4Ht/gr4g2PiiBIJmSDUQPmiJ4f3X/AA7VNrnjT/hH/EUdneWp+xPGGMynJU5xnHpXztClzaXCTW7skiEFWU4IPauqvvE19rq28moMpmijEe4DG73PvTcQPou2uYLy1juLeVZIpAGV1OQR9akrxfwF4lm0zVobJpv9BnbDRseEY9x6c/zr2fOee1IAooopAV7qwtL0AXNtFNjoXQEj6HtXn3jXwxptiI7i1tUiWQEMFJ6/5P6V6TXBeONYtLmdNJiJe4jDMSDwCADtx345J7YxyekySsaU27nnYsk3AhnBHo2KkjsoxjCZ9zUqjHvT1YD2rGx2Do4lTGFA/DFWIk3E+magU7jjsOKv264pFKJYiiAGamhtPtEm05WJceYy9QPQe56D3NEEZkZY1IBPUk8KPU+3WtGKI3DCGBQIF4kZhyfX8e/sSB/DWtKnzO72Mq9XkVluWbVnlUR28axxrwrIwIHY49SOQPxbvV5VEYwg5PUiiKNYkCAkH0HapV+/XUzzrlG+gBVZgMHOG/xpkOPfJ71elO/KHlR97+g/z/WqcXyscYIFQykXI92OuAD3qUEdwDz1HIqKPgAE1L6noKBigHHbPt3p3Geg7/jTQe2Pr1FLjHOaQDjxytIdueO9OAwuc5x29KQj5M/hQMaDjPqOxBz/APqopc4Oe5HIzx+VFIDRn/4+E+tXO1U5/wDXp9auUgK83eqr1al71VfvTAzl4uZK6K3P7hPpXOL/AMfUldFbf6hPpUoBbmBbq1lt3+7IhU/Q187eItDvfDepSQXcbeST+7lx8rj6+tfR1UNY0i01vTpbK8iV43UgEjlT6iqTsB8wSXMTMAvU1IrYqPVtHk0zWLuykOGgkKZPf0qqkrwtskGR61YjXhnKEEE1754C1ttb8NRPK26eA+TIfXHQ/livnlZAQCDxXrHwcncnVIc/IPLcD0JyP6CpYz1WiioLq8trKIyXMyRr7nk/Qd6kZg+NfER0HSMQEfbLnKRZz8o7t+GRXi63cgvVmkZiY2Dtk4LYPPH5/wCevWeNNSXVNSmlG8RJ+7TcMEgZ6e2eee5x9POJbmW4leKBgVc4yADv7emAPfp6CmkUjs7nCSlk5VhkGog3PaqdjOTYQo7biigbuuanMoUgVg1qdcXoX4TxzitK2jMu4rhY0GXkb7qjPf8Aw61FZ2cEEMNzfOT5nMduMguB1yew6fXPbBxorFcXVs8yjZbI2AF+Ubs4AGPc44zjtnmtYUW9WZVMQo6RFWNp7gWlqxUAhndupweuPr29R7ZboYIktolij5A7nnJ65P8AOqtjYx2MJwfnY/M7cZ/wHt71Y25UjP45Nb2WyOGUm3dkynuBnPfHWkDlQW6noO/NRsp5+cde44qAfNIAoALcIDxxjOemff8ACholD2mVn8gMxAALZ4JBz6evP+cEWXjR8SRjBHp3qN7NHQYysincH7k9/wD9XsPQU22lbALDaDwykchqlotEyEdCD+BqVSpGM9aay0AgnBJpFE3+ycY/lS9cdDTVYcf1HWlzn3+vFACnG3g4xSdcAjPtQDyflx24FISARkHHoKQxMjOAfz60UpYu/qB1wcflRSGaU/8Ark+tXO1Urj/Wp9audhSAgm71UfvVubvVR+9MDOB/0uSuhtv+PdPpXO5/0t66K15t0+lSgJ6KSiqA8S+KNhb2viieaSFm+2Wu6MrxiQHGT+FeftCGQBhnivSPi7e28+u2Fmj4liQ+Y2PuhiP8K8/mtUhvfLgujNGSAGbiqWwh2j6FqerXQttOtnnbvgcL9TXu/gPwg3hawla4cPeXGDJt6KB0Fa/hjQrTQNFgtrZF3FQ0kgHLt6mruoXgtLcsOZD90Um7gUNa1oWEbRw4M3TJHC1xk0ks8n2q6YyOx+UOev19qvOpnmM0mWUHJJ71k6xIVywfCjkkEgj6Y5FNRE5HJ+JJ0ieaFlYzv1yx+UYIBI9fTp+A5GTaWfkRO4Uhiqvg9R8pIH04Fa0NnbXNwWiljeQnO1QVCnjJJPJ/EknJ5Hdky+Q90ScqnA29DyDx/wB8mnY0v0RnaSUP2iGJSSsnPuen9K7S30dNJsf7QvojLdFgsFuD91sjBYd+vT6Z68Zljbf2LoMSsVFxOPMlbe2QD8wA24+uM4yeegpBcS3F04u5pCzHzTuIyeFGVBGOAMfhzx0UYJO45VHblRttIYGjZ4vPuJsuA5OEXPsc8nIwOuD6gjU02Ga4xc3TYQZEcYGAO249hxkADgD8aytH0y7uruSa4Z1RCFGeWIH8PsMcevbiuqjLFhwMe1a3Oduww5YnaxI7f/qpcMMHZtPU/wCf8/4y+YMDanOP8/nTHmKBWYfMxwO/P+f60iCGWcNnLARpy5yPrz7f59adpytLE1zIuBIcxjABC8c8evX6YqP7Ot3sQsrwL98EZD9QR0/T04xg1fLEjjI+tS2WkSYFUrpGilMgxskwDxnB9fyxVsfKPelaNZFKvyDjjFIdhsbKyZPUdqXG7PBx+VQWymH5WzlTtbPp6/SrxGOgoGV8tgjnPtxmpQQT0HA70xiCOmDTQOetIZNzjhvx6UmCynA5HfPb1x+P8vShWyfujjkjGaAAOf8AP40mMGVT79iG5/wopMsV+QZJ/GikM0rn/Wr9at9hVO5/1i/WrY+6KQEMx61Tc0mo3n2YMSOAM1zV14iYwF0THHGaANRji7f6V0Vof9GT6V5na6/KLrM/zBh2r0nT332MTDuuaEgLVLSUE4FAHzp8QLs3HxBvV7KVUfgK59Vw/mA/h6VoeKJfO8Z6i5Az57c/jWZFLiUowyCatbAfU9jcL/Y9tMxwDEp/Suc1S8M7OxPHTGegqPTr1rjR7NtxCR26gD3x1/nVG73TBgSVToT3+g96FEzlI5i+8TahY6i6tFFNZY+QD5W/A/XPUU7ULtL3T/taK8bN0DLgn29+h6elaT6PbS3izywrwBhW+6oHTA7ng9ePan3lul0v2ePKh+Mjk/hk1aRPMjC0CzSOymuZ8IPJbLkgfM24JknjPX8qo38CR2e+PgTS7kwO2XIH5EV1+r6dHBp6xQzGNfJkk2xttDEKAAfUf0FYF/Bg2VovVEDEH12IM/o1KWkTamrs2YorKKD+1Q4mcJut08sLsOQvT1BwM9DtbtWV5E13c2v2WQGcxq/mqoAj+UcHr3H6+9Urm8EaJEmPLhGVdON/zdc98HJH4epqEzahpI+0hhbyswHllQXx3JGPlzkYHt271f3SWtdD0iDy0g8sAh8fMCOp/Gnq+eO/t6/5/WuGsvHA3Bb+0UDOWeHp+Kk59e9dXZ6jbX1s01tMsi+h6qfQjtxikmZuLLbEIBgtuJ5zzn/P+feq7ySttUYZjtVkbGD3z/ntTZ73yiRtbf0AAzk+masWiYTewOSOPYf/AF+tNsSRZhURRiNPur0Ock+9SrzUSsfepVyf61JaHDHQU/oPemjr/WnAqOeKAuV7tSGWaMZIwp78Z/z/AF4qaJ9y8Nn0PrTZZImDK5DcHIxn9KpwzNGzKSSykjkjkcc/kQfbOKANAgNn+dM2lTx65GaRZY2Uc4OM07cD0YGkMZ80Rz1X3/lTllAQHdgeoPNO3jGCaqEtBLhWGxugJx+AP6/WkNFxd27JXI64HeioVkBUHdhT3PSikM1Lr/WL9atj7oqpdffX61aH3R9KkZha0wDMD0xXDaq5CsF6e1dl4gDGXg445ri9QACMTQgKUfEkZ74r17ST/wASy3/3BXjqE+coHpXsGjn/AIlVv/uCmwL4oIyCKKKQHzx468NXug6zJfTqnlXcrGPD5NYGmabdapeCO1jDuBuYZxgV6h8af+PfSv8Aro38q5L4dAHXZeesZ/mKuIm7I9K02JrfR7aDuqAMc+g/+vUjfMfMfAVelKuEjUN91cAY/iNV5pC5JYYUHGK0Whg3cyNX1YWl5atKjeSzFX+nHP4H9M1p26rB5rxrhV+T5evPJx79APciqmrWf2uwZMZl6rx0q/saKzt45GCuFy5X+E4+Y/gcn/tmKcU0x3TsUdUuJhalIk835JI2xzyQMBfQDJ/D8qx9ZvkW5uY7XLSZKtKv9wF22g++cH2BHrV7Vr1rbbZRIwkLDecD5AQAEB69sZH496wY0WSZIv4OWfjGVAJ/kfT+L2pM0jcfbzJpMXmyxRS3jgMrSEsI8HggHqTjOee3vmk8st60js5Yu+5vUn3qSRJpbkuHCc54VS2c98gjsO3atCx8OxXM4upnneZmBJUqu4k552gZHWkS2ilpOjfbBc3VyxS3gGeQRufrj/PtVW0tLtLl7y3DRtnCEDtXZ38Eai20i34T78oHJxnP881qrbwRwpFsGAuAB29x+dOxPMYegTzalM3nxD9wuCSOhOen17/T3rqA3O3BqKCGOBSqADucccmpFcAFjUjRKWVcb2AHSnCZTgLyKx5ZvPZnPQHC/wCNW4pNsYyRvPQelIouNMqMFIy56L/n61C8rO+3BO7oByB/iOf5U2GOSUnOAuT83c/59KnDLCnloOnHPU1RJCtu2R5hATP3ep6fofzqX7JCEO55XOeDu2n6fLjj60mHZwR2HrUghbgs1IaIxaIsYWMunzZO5i+eMYOecfTFRSCaFV3IXXgb0z146jqOSfXgZJFX2xt5pCwIxznrQMoLN5qK6OCp+6R3qR1MkBGRz0z2NOmtQ6mSMKJN2c9N3AHP4Ac//qqusjMpWQBXU4I/z/nmkBPaOrYba4JGOmTx/wDr/wA9aKq+Y0dwz7xtK8Ar/WipKOju/vL9atj7oqpd/eX61bH3R9Kko5zxB94/SuI1A5ieu/1iwlvCypwCMZrlL7w5cQ22FIb+dCA52PG+PtxXr2jHOlW/+4K8vg0e4lnwBjaK9Q0hSmmQKeoUCm2BfopKWgDyj40n91pP++/8q5L4dtt1yY/9MjXWfGn7uk/7z/0rkfh+ofWZd3QRkn86qJMtj0xv3gDNnZ/CB3/yaj5eQDvjJ/8ArfpTzkgDgMBk9vpUZlSJ+c7XyCducEc1qYE0fNxGmNzHnB4z7Z7dhSSXAWSWUkuigEZOMgYwMn+8dn/fbVX027juftTpOpWJ/JJzna3VufYHP1Wo5JxLF/cDvltuOFBwARnPBf8A8cqk9CoozfI8x1csJLmZwwPYbjncce5Rse596prZmKOR+TkKvrgEBj+mB/wGthIYDnHn2rTnALLjAJA4/CQDr/AKT7ItoqOJI137SSy8DOW5/wC+scn+H2qbFt6GVFZh5V2QsqAADcME810tpDHZ23nuAuASCPTqaWCIOVO4O2cBiMZNQa3IzxwafFw1w+zOcYUck/59aZlcj0iMyyyahL96ViVHt2rYRMNkqBt9eMmmQwJbwLGvIUY6U/jDH0GPrSYIU5BxgepqrfXBgtyB94nav1qyW+UnvisW9m8y/hh67QXP8h/WpLRbjVUjAPbH41NaK07MxOEJBLH9cf5/+vRI+0SBFYHkjB7+v0/X1+l938qPyIeD/EfU0hmlkbNqEADpSKuX9s1VtVdIzuOS3OPSrAYgdAOaBE3QjuaefuD271CjgE5p5YEdutA0K7cA9KYp5JpzAFTnpTSMf/roGAcbWB44qrcwiXEinEijGfUeh/z/AFy9g3J/CmgsAMg4pDKbOHtN+1s5GMgAj8+lFMuALc5XaAx7gf8A6/X16UUAdXedV+tW1PyD6VUvP4frVpfuj6VmWQzdapTAEc1dmqnJQBkCNY79gowCM10th/x6rXOv/wAhD/gNdDYf8eq0kBbooopgeS/Glhv0hc85c4/KuU+H2P7Zmz0MZro/jPEw1PTJsfK0ZX8QSf61y/gQE6tKBgEoRyOlaQJlsenysADHk72BKjPJI7VzfiHVpYZ1stOTzLy45AzwnYH6ntVnWNZ+y6fuT5rp0KpFIB94Dr/n6Vl+E0F3ptzqkreZcyFtzNywAHOfY8j2wK03Moq2pu6fZHR/Dq2zsS55Dt0JYZOfbPy5/wBurdsgSAAx4Jwqk9gQqgkHqQJMZ9uaj1GRhDBFtBdsAg8hjgZB9Mgp+IP43ooJEt0jiuU34JV25LE5A6d/3idc9avoMefJuIGiwGaQMQ2VJYsBk4z6v0OMZH4wOi+aPLUyjaMDsueQcE98k+ozjtVp9yhlLI8e3Cx7ccZLBfoQUHHfFQh9qtIJgzfdyo4ZupbP1J6cc1CVgk7otxiGPfsKllGGx/DWNZt9r1a5vDjZF+4i/D7x/Pj8Ku3tw1npMkrZLqhcjpk46VBYQeRYxREksqjcxPVu5/E5pmZfGXfAPT1/T+tO3DfsHRRSRD5QQMhuf8KrTbops9m6e9SxokllVXx7HmueEhlmurjIKhxCGHVQBzj8cj8K1bhtkeT25yaybGNljiYykFxmRQO55/DuaRRsWoaK2Zjgyt3wOn+f8asKu5gcn3qtHco6hVAwDgBatRHMe9ht6gCkMnPUc89qdGcoOc5qEbcAknNPRizAYxQBOHAbmpEbI56iolVRycZzT/NXtQMlJ4pvI5pVYED1prfpQMrys5JHFNZjs5odgD1ye1QysQoA5pDY4RiaNgx4J9SO9FPhVginoTniigm5v3nb61aU/IPpVS87fWrSf6tfpWZqRzVTkq3N1qnJQBmSf8f4/wB2ug0//j1Wuek/4/x/u10Gnn/RRSQFyikpk0ywRF26Dt60wPJvjRIPtWkoDyA5/lj+tcd4NlWG8uZHJAVM5H1FbvxVmefVLF2PVDj86wvBdsLrVWQ/cA3NjvitEiW7o7K3gldZLuaMmRwSqryFXsPb86m8Ot5+nOvO0s6lguTguQT69ATV65IihZR0x09KXRLcQWqsqFmx5vDYOeTj3BJx/wACrRIi42/Y/wBohduNgwwU8NzliPdWLHtwK0CGUlFnZSNqABNp3Dco554zGtZFwf8AS5IY8k78EnHLAEE4/wBpcn8K1PtQaZopkYAybuVzgBVckYPbk4/2j+NsCeXcAURjuBOzIAwf4fw6f9+j9AiRmSSPevyqMBQOB+HWqplmG+Ty90qKxA/hZwAMenLNJ6fpUWiNqs8huL4hIVyY8RlHkwCMkHkDjpxz+VSxMk13FxJbWwwfNmBYZ6KvzfzAH41Oqhyq9dxAOPSqFzc7tdK/KWiix17tyR/46Pzqe3uAoaQ7dw4A9z1/z70EGnJIqOMkBveqV9e2zkDcu5ewrAvtRuBOzuNqnnrVb7UJULbsn2qWykjTv7sNYTMGx8p5/CsZb7KnYcE/Ip9v8il1KYtpsqrkkAcY96o+HLU3UpmmJ8iFuBnBZvSpLWh1mmRFU29EX7zep9K0XlEh2qCccDFUlmOwIu1FA4GOlXYYyw3b8igViaPChc9cc1IHyDgAY6VARtfrnkDrQpY88UASSFgcBunSmqGOCc59qkVC2DkVPFEAfmPUUCCF3AAcHFStyDUoCBTgCqsrkbsCkykREbjz60mzc4J6U2Mlmq0ARwelCBgTtQY7UVDO+ENFMg3L3oPrVpPuL9Kq3nQfWrKf6tfpWRuRzVTerk1U5KAM2T/j9X6Vvaef9FFYEv8Ax+r9K3tOObYUIC5WLqNx57lVb5V7ZrQv5TFZSMOGIwPxrjZZmsrlZM5jkOG9jVRREn0OH+JxH2/T+P8AlmefxrN8AnGpXDekZq98SZVmvbBlORtI/wA/nVPwAB/aM5PQJk/nVoPsna3kh8k5PQcAitPTw66XbcAOUVhlehOMfUZKt/wE1mSRtd3kdsvAdsE+g7n8q17goilPLARRhlH8Iwcj/vkSf99CtEiEZ9vbpPuLZClvLCFfmVcgYx3wSv4E1ct8hmZ2JjYKxQx4C8YYfkjj8qYpKDDy4dTuZhjnYMk/iPLP1qzGoaFsLhdxwA3DgkNnHoSVH0Y5HWqe4yWBCzvmQhvuuR1bGc/+PF/T2qZpd28jsvHH5fypFIt7VYlO9sYLnGSe5NVVOIpHDHduOefQHp7VDIMu2fzZLxoc75JfrnHy/wBKtybCGAhRF3EDbkYH4celZukoryMRLx5jkgr0wzNirTy7UJzxg8AgigCjerASqPCzF+Dlh0/KqXlWNvIFS0V2LYGZH4/IinTEyyl9wUAHGCOB7UkCoixuxJyWO4HngZ/Dn0zQBW1FkeG6Yhk3AqqxORjnHOQc9uMirfhpWXS0UnO0sMenP/16QWKXt1Dal2EbY3OECkAcnrnOSBz71qJaHRYlRosRlzhlJZeTxye+KixdyxC4BG+PcPXFaKGAKSBtGe3FV7eeKWHK4zj0pzHPC4IziiwrlxY4C5GcnPb6U/yowpIPH1qnHDKzkg8dcVdigYqdw7etMVwXZnAyeKcUdsEA/hVlIAMnHUU52WIckCkMgBKJ8wwcVUkbdnFRXV2JpCqkkDvXmfiTxnci9uLO2ZkjjcpjG3pxz3pFpHozaxpltKYZb2BJQpYhpACKz7Pxxol/qD2dvcnK4xIy4Rz6A/4149HqEkku6Y7geDx0p1tD9mvyy48uTpQPlPcbq4+Qgc89qK52+1AzaLbSj78yrkqcYOMn+tFArHpF790VZj/1a/Sqt790Vaj/ANWv0qCyOaqclW5qpyUAZsv/AB+p9K3dOP8Aow+tYM3/AB+r9K3LBgtoWJwBkk1K3AZrYc6a7qCQh3NjnjFclI6Xtu20hgRyF5/EV0o8RWMhKbgcg4965W5srmC6E9uQ8ZPzKvG0ewrRGcjznxfG0VzbK3qx9u1S+Azi+uM85TGM+9TeP1239nkYLKTUHgWNpb6aNfvMABk4HX1qluP7J6TpVv8ALJdOAS42oCCBjoT1HGcDPOMc065mWNdyucAZVmJGM4Iz7YEQP+81ODIqeVgmFBgjjOMH074Ein1IHSmzqNwMu0ANlwp68kv275k/74FbIiwWsQMe6RWwBhV3YPTG33OCw+sY+lT2oZSIQ6SRpt2tnacgH8xgrj6ihTGIoxIF39XIGcEMN3HqCS3uCfXNSRxxW8e5ogHGFGeQD9e+Dx+FJiewl1IdxKnKqMADnPvVRm2WjklsnnBbPtROC6l90eRyR1xzxVS7ZrfRJ243LGxyBx36e1SSjI0IOYgI3JbZyXOM5P5Y+b0q5qMhihZSy5PU47fnUelFY4ixHIVQOf5/lVe+SV7nc5yvYUMaKYlfLDYvIxxwf61KFlcAruCbdvMYPXr0IPPsKnRSzAHaKlmwsIXeFHfPT9On4UJBcZo6M+rM5bhE2qMEHBI655/hNdpE3yFSAQRgg85rmNAtSrS3bN8r4VCSTnGfXtz/ADrba7WPjPTvUMssfYrJGJWLyy3XacD8ugp0UNqp4Z/xNZMuqhR0Bx05qmdXbPCkA+9K4cp1iGFBkYqGfVLa2GGYA+grAg1VXIVzjPHpVz+xopxvScknnmncLJbj5vESYPlISfcVl3Gp3E5POF9Knm0WWPO1g1VW06YcFe9TqUrFG+1gaZZSXLrnZ2zjNeba9qkWrX/2tYljkcfNtGASO/1rtPF0EkWgyE8ZYc15xIpeIfKFA6c5NCKG5INXrSYMBG2ODlCexqr5Eq28czoQkmQreuODTRkUxnbWl21xYwQHIEJb9eaKxReSaakV7D5ktjONpBPzI46jPr0/A+9FKwj6KvfuirMf+rX6VVvfuirMf+qX6VAxk1UpKuTVSkpgZs3/AB+J9K1redIbIhhndketZE//AB+J9DS3ZLfZoiTsYOSAcZx0pLcHsULi2hWUPc37SYBAjWNQmOwIxn9aoXF3NpeJIiZ7Xuc52/j6Vp2pLvID0GeBwPyFZc0r/wBq+STmMr0YZ/n0rQyOC8Z3kl9fW08jIQQdu3tVr4dIX1C62oWPl9OBnJ5BPbPT6kVS8ZxR2+pQpEoVeTgfWr/w5H+m3n/XL+Zx/ImnHcvoeiSSqigjJbqAzff6H9Ts/wC+zVXzsoEYF8YyVG7IHf8AEK5/4GPrVhsl3Ykkrlhk5wf3h/mAfwHpUxiSGdRGoXDhePTdGP5VsiCN3ha4VZCyukuAy9X2pnnPquAfoOxpHhDAvOH3Y4V2z7ZxUEUjmdELEqbUZB9mwP0JH41WKASM2WLBsZLE+lQ2TItSCNYceUcjHA5OOOlU9ZfZpDNk/MF/DJH+fwqe8dkUhWIwMjHY81W18ldNQDp8n81oJIYIhs2jsMflUQO+6A67TjBqeM9en3fT2qC3/wCP+UdsijqHQssibmABAH6VHHbmacI+fLXl8jgj0qcHLEdt3T8afbAfZ5z339ab2CO4lxeEMscQ2qowABVYtPMcAE54q/bW0LHcUBPNXoYIl5VADWVjW9jHi055vvHH1q7HoUEgIMjbxWvsXaOB2pi8SsKLBdnP3Oizw5KHetQQXN5ZsNob6HpXYjkLVSaGMhsop/Ciwc3crWmrC4wsq7Xq8xDEcA81gzqEnyowfatWJiYRz2oBo5X4iYTwycDrMoH5GvKW/wBQPbNem/EWRv7EjTd8pfJHuB/9evMW/wBQPoaCka7LnwZCwJOy7P4ZBrFrfhAPgOQ+l2MflXPmgZdsb5bcSRTp5ltLjenfI6Ee/b6E0Vm5ycmigD//2Q==" alt="Portrait of Peter Moltke Skov-Andersen">
+    </div>
+    <h1>Peter Moltke Skov&#8209;Andersen</h1>
+    <p class="role">Neuroscientist studying the neural correlates and pharmacology of altered states of consciousness</p>
+    <ul class="contact">
+      <li class="place">Copenhagen, Denmark</li>
+      <li><a href="mailto:petermoltkesa@live.dk">petermoltkesa@live.dk</a></li>
+      <li><a href="https://www.linkedin.com/in/peter-moltke-skov-andersen-469846169">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0009-0006-8287-9494">ORCID</a></li>
+    </ul>
+    <nav aria-label="Sections">
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Methods &amp; skills</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#grants">Grants &amp; talks</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="about">
+      <p class="lede">I study how psychedelics and meditation change the brain, and what these altered states might offer for treating disease and enhancing well-being.</p>
+      <p>I completed an MSc in Neuroscience at the University of Copenhagen, using fMRI to map how LSD and music shape brain activity. I have since completed a second master’s at the Meditation Research Program at Harvard Medical School and Massachusetts General Hospital, investigating the neural correlates of advanced meditation with EEG, and lived in Boston from April 2025 to May 2026 for that work. I also hold a BSc in Pharmacy and have conducted behavioural neuropharmacology research on MDMA.</p>
+      <p>Alongside this, I develop and write psychedelic-informed guides for <a href="https://clusterfree.org">cluster headache prevention</a> with ClusterFree.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="entry">
+        <div class="when">Apr 2025 – May 2026</div>
+        <div>
+          <h3>EEG correlates of jhana meditation</h3>
+          <p class="where">Master’s thesis, Meditation Research Program, Harvard Medical School and Massachusetts General Hospital</p>
+          <p>Preprocessing pipeline development, power analysis, brain criticality, entropy, connectivity and graph analysis of EEG recorded during advanced concentrative meditation.</p>
+          <p class="note">60 ECTS · Grade 12 (highest)</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Sep 2023 – Jul 2024</div>
+        <div>
+          <h3>Psychedelic symphonies: investigating LSD and music-induced brain activity using fMRI</h3>
+          <p class="where">Master’s thesis, Neurobiology Research Unit, Rigshospitalet</p>
+          <p>Resting-state network connectivity, independent component analysis, seed-based connectivity and amplitude of low-frequency fluctuations. <a href="https://doi.org/10.31237/osf.io/xgh4w_v1">Read the thesis</a>.</p>
+          <p class="note">60 ECTS · Grade 12 (highest)</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Jan 2022 – present</div>
+        <div>
+          <h3>MDMA-induced social behaviour in mice</h3>
+          <p class="where">Jesper Andreasen’s group, Department of Drug Design and Pharmacology, University of Copenhagen</p>
+          <p>Set up and validated automated tracking and quantification of drug-induced social and locomotor behaviour (independent study, 2022), and have since continued as a volunteer, teaching the method to new students and assisting preclinical neuropharmacology research.</p>
+          <p class="note">Independent study grade: 12 (highest)</p>
+        </div>
+      </div>
+      <p class="note">Mentors: Matthew Sacchet, Patrick M. Fisher, Remko van Lutterveld, Jesper T. Andreasen, Drummond McCulloch, Anna U. Odland.</p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="pubs">
+        <li>McCulloch et al. Molecular, haemodynamic, and functional effects of LSD in the human brain.
+          <span class="meta">Preprint, medRxiv, 2025 · co-author · <a href="https://doi.org/10.1101/2025.06.17.25329677">doi:10.1101/2025.06.17.25329677</a></span></li>
+        <li>Skov-Andersen, P. M. Psychedelic symphonies: investigating LSD and music-induced brain activity using fMRI.
+          <span class="meta">Master’s thesis, 2024 · <a href="https://doi.org/10.31237/osf.io/xgh4w_v1">doi:10.31237/osf.io/xgh4w_v1</a></span></li>
+      </ul>
+      <h3 class="sub">In preparation</h3>
+      <ul class="pubs">
+        <li>Investigating LSD and music-induced brain activity using fMRI <span class="meta">First author, with Patrick M. Fisher</span></li>
+        <li>Entropy and jhana meditation <span class="meta">First author, with Remko van Lutterveld and Matthew Sacchet</span></li>
+        <li>Linear and non-linear connectivity of jhana meditation <span class="meta">Shared first author, with Remko van Lutterveld and Matthew Sacchet</span></li>
+        <li>Effects of MDMA on attention, impulsivity, and social behaviour in mice <span class="meta">Second author, with Jesper Andreasen</span></li>
+        <li>EEG correlates of extended cessation of consciousness in advanced meditators <span class="meta">Co-author, with Remko van Lutterveld</span></li>
+        <li>EEG correlates of mild traumatic brain injury <span class="meta">Co-author, with Remko van Lutterveld</span></li>
+        <li>Effects of psilocybin and music on acute and persisting psychological and neurobiological outcomes in psychedelic-naive healthy volunteers: study protocol for a randomised factorial trial <span class="meta">Co-author, with Patrick M. Fisher</span></li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="when">Jun 2024 – Jun 2025</div>
+        <div>
+          <h3>Research assistant</h3>
+          <p class="where">Neurobiology Research Unit, Rigshospitalet, Copenhagen</p>
+          <ul>
+            <li>fMRI data analysis</li>
+            <li>Assisting with MRI (N=50), PET/MRI (N=11) and MEG-EEG (N=8) scans</li>
+            <li>Assisting and blood sampling during 30 psilocybin and LSD interventions</li>
+            <li>ELISA estimation of plasma BDNF, and analysis of its dynamics after psilocybin</li>
+            <li>Recruitment and screening of participants for clinical trials with psychedelics; REDCap and trial management</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2023, 2024, 2025</div>
+        <div>
+          <h3>Guest lecturer</h3>
+          <p class="where">DIS – Study Abroad in Scandinavia</p>
+          <p>Presented ongoing research at the Neurobiology Research Unit and showed students the research facilities.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Sep 2019 – Feb 2025</div>
+        <div>
+          <h3>Student assistant</h3>
+          <p class="where">Novo Nordisk, Måløv – Oral Finished Products</p>
+          <p>Data organisation and graphing for studies, archive management for drug and production documentation, training assignment for technicians and chemists, and writing minor deviations.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Sep 2018 – Sep 2019</div>
+        <div>
+          <h3>Mentor in mathematics and chemistry</h3>
+          <p class="where">MentorDanmark, later independent</p>
+          <p>Private tutoring for students in grades 6–10.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="when">2021 – 2026</div>
+        <div><h3>MSc in Pharmaceutical Sciences</h3><p class="where">Faculty of Health and Medical Sciences, University of Copenhagen</p><p class="note">120 ECTS · GPA 10.7</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">2022 – 2024</div>
+        <div><h3>MSc in Neuroscience</h3><p class="where">Department of Neuroscience, University of Copenhagen</p><p class="note">120 ECTS · GPA 10.3</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">2018 – 2021</div>
+        <div><h3>BSc in Pharmacy</h3><p class="where">Faculty of Health and Medical Sciences, University of Copenhagen</p><p class="note">180 ECTS · GPA 8.1</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Jan 2022</div>
+        <div><h3>FELASA certificate in laboratory animal science</h3><p class="where">Functions A, B and D</p></div>
+      </div>
+      <p class="note">Grades are on the Danish 7-point scale, where 12 is the highest grade.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Methods &amp; skills</h2>
+      <div class="twocol">
+        <div>
+          <h3>EEG</h3>
+          <ul><li>Preprocessing pipelines, power, entropy, criticality</li><li>Connectivity and graph analysis</li><li>Cluster-based permutation tests, linear mixed models</li></ul>
+        </div>
+        <div>
+          <h3>fMRI</h3>
+          <ul><li>Data curation and QC</li><li>Resting-state networks, ICA, seed-based connectivity</li><li>ALFF, linear mixed models</li></ul>
+        </div>
+        <div>
+          <h3>Clinical and wet lab</h3>
+          <ul><li>Psychedelic trial support and blood sampling</li><li>MRI, PET/MRI and MEG-EEG scan assistance</li><li>ELISA (BDNF)</li></ul>
+        </div>
+        <div>
+          <h3>Preclinical</h3>
+          <ul><li>Automated tracking of social and locomotor behaviour</li><li>MDMA behavioural neuropharmacology</li></ul>
+        </div>
+      </div>
+      <h3 class="sub" style="margin-top:1.75rem">Software</h3>
+      <ul class="tags">
+        <li>Python</li><li>MATLAB</li><li>EEGLAB</li><li>FieldTrip</li><li>CONN</li><li>R</li><li>REDCap</li><li>EthoVision XT</li><li>GraphPad Prism</li>
+      </ul>
+      <p class="note" style="margin-top:1.25rem">Languages: English and Danish, both fluent.</p>
+    </section>
+
+    <section id="service">
+      <h2>Service</h2>
+      <div class="entry">
+        <div class="when">Dec 2025 – present</div>
+        <div><h3>Volunteer, ClusterFree</h3><p>Developing and writing psychedelic-informed guides for cluster headache prevention at <a href="https://clusterfree.org">clusterfree.org</a>.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Aug 2024 – present</div>
+        <div><h3>Communications volunteer, International Society for Research on Psychedelics (ISRP)</h3><p>Co-organiser of ISRP 2026 and the 2025 virtual conference, abstract review, and social media.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Sep 2022 – Jun 2024</div>
+        <div><h3>Study board member, MSc in Neuroscience</h3><p class="where">Department of Neuroscience, University of Copenhagen</p><p>Represented students and gave feedback to course and study leaders on programme quality.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">2023 &amp; 2024</div>
+        <div><h3>Study start organiser, MSc in Neuroscience</h3><p>Built community for new international students, secured sponsorships, and organised social activities.</p></div>
+      </div>
+      <p class="note">Mentoring graduate student James Ruane.</p>
+    </section>
+
+    <section id="grants">
+      <h2>Grants &amp; talks</h2>
+      <div class="twocol">
+        <div>
+          <h3>Grants, scholarships and residencies</h3>
+          <ul>
+            <li>Edge City (2026), invited resident at the Consciousness Residency, Edge Esmeralda: event ticket and one month’s accommodation</li>
+            <li>Knud Højgaards Fond (2025), 36,000 DKK (5,651 USD)</li>
+            <li>Viet-Jacobsen Fonden (2025), 25,000 DKK (3,924 USD)</li>
+            <li>Direktør Ib Henriksens Fond (2025), 25,000 DKK (3,924 USD)</li>
+            <li>SUND Outgoing Mobility Grant (2025), 20,000 DKK (3,139 USD)</li>
+            <li>William Demant Fonden (2025), 20,000 DKK (3,139 USD)</li>
+            <li>Assistance Grant for Bachelor’s and Master’s Students and Graduates, School of Pharmaceutical Sciences (2025), 17,500 DKK (2,747 USD)</li>
+            <li>International Society for Contemplative Research travel grant (2025), 500 USD</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Talks</h3>
+          <ul>
+            <li>Speaker, International Society for Research on Psychedelics conference, 2025</li>
+            <li>Speaker, Edge Esmeralda, 2026</li>
+          </ul>
+          <h3 style="margin-top:1.5rem">Beyond the lab</h3>
+          <p>Silent meditation retreats, effective altruism, community building, beekeeping, bouldering, gardening, mycology and foraging, long-distance running, and existential philosophy.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Peter Moltke Skov-Andersen</footer>
+  </main>
+</div>
+</body>
+</html>
